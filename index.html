@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!-- <script src="assets/javascript/hangModal.js"></script> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<title>Crystal Game</title>
+
+</head>
+<body>
+	<div class="container">
+		<!-- first row: crystal collector heading -->
+		<div class="row">
+			<div class="col-lg-8">
+				<h1 class="heading">Crystal Collectors</h1>
+			</div>
+		</div>
+
+		<!-- second row: game information -->
+		<div class="row">
+			<div class="col-lg-6" id="info-par">
+				<h2 class="info">Game information</h2>
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to random number, you lose the game if your total score goes above random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+		</div>
+
+		<!-- Third row: includes random number and wins & losses -->
+		<div class="row">
+			<div class="col-lg-6">
+				<h2 id="gameRand">Random Number to be Matched</h2>
+				<div class="col-lg-4">
+					<p id="random"></p>
+					<!-- code for random number goes here -->
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="col-lg-6" id="winloss">
+					<h3 class="wins"></h3>
+					<!-- code for wins -->
+					<h3 class="losses"></h3>
+					<!-- code for losses goes here -->
+				</div>
+			</div>
+		</div>
+
+		<!-- Fourth row: includes crystals -->
+		<div class="row">
+			<div class="col-lg">
+				<!-- crystals go here -->
+				<!-- code for random vales of crystals goes here -->
+				<button id="randTetra"><img src="assets/images/tetra.jpg" height="70px"></button>
+    			<button id="randPenta"><img src="assets/images/penta.jpg" height="70px"></button>
+    			<button id="randHexa"><img src="assets/images/hexa.jpg" height="70px"></button>
+    			<button id="randOcta"><img src="assets/images/octa.jpg" height="70px"></button>
+			</div>
+		</div>
+		
+		<!-- fifth row: includes total score -->
+		<div class="row">
+			<div class="col-lg-6">
+				<h2 class="score">Your Total Score is: </h2>
+				<!-- code for total score goes here -->
+			</div>
+		</div>
+
+		<!-- sixth row: shows the number number you are adding -->
+		<div class="row">
+			<div class="col-lg-2">
+				<p id="score"></p>
+				<!-- code for number addition upon crystal clicking goes here -->
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
